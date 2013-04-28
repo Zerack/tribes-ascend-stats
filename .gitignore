@@ -1,6 +1,7 @@
 *.log
 *.pot
 *.pyc
-local_settings.py
 .project
 .pydevproject
+/tas/local_settings.py
+/runserver-localhost.bat
