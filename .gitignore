@@ -1,7 +1,8 @@
-*.log
-*.pot
 *.pyc
 .project
 .pydevproject
 /tas/local_settings.py
 /runserver-localhost.bat
+logs/*
+!.gitkeep
+

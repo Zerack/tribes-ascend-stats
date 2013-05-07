@@ -1,0 +1,26 @@
+.baseFontFace {
+	font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+.altFontFace {
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.border-radius() {
+	border-radius: 4px;
+}
+
+.btn-color(@baseColor: #888888, @textColor: #FFFFFF;) {
+	background: @baseColor;
+	color: @textColor;
+	
+	&:hover {
+		background-color: lighten(@baseColor, 10%);
+		text-decoration: none;
+	}
+	
+	&:active {
+		background-color: darken(@baseColor, 10%);
+		color: @textColor;
+	}
+}

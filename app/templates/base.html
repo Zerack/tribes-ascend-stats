@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>TribesStats</title>
+  <link rel="stylesheet" href="{{ STATIC_URL }}css/normalize.css">
+  <link rel="stylesheet" href="{{ STATIC_URL }}lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet/less" href="{{ STATIC_URL }}css/tribesstats.less">  
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  {% block styles %}{% endblock %}
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Leaderboards</a></li>
+          <li><a href="#">Players</a></li>
+          <li><a href="#">Matches</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div role="main" class="main clearfix">
+        {% block body %}{% endblock %}
+    </div>
+  </div>
+  <footer class="clearfix">
+        <ul class="footer-1">
+          <li>About</li>
+          <li>Contact</li>
+          <li>Github</li>
+        </ul>
+        <ul class="footer-2">
+          <li>NATribes.com</li>
+          <li>Wilderzone.org</li>
+          <li>TwitchTV</li>
+          <li>Hirez Studios</li>
+        </ul>
+  </footer>
+  
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="{{ STATIC_URL }}lib/less/less-1.3.3.min.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
